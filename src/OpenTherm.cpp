@@ -31,10 +31,10 @@ void OpenTherm::begin(void(*handleInterruptCallback)(void), void(*processRespons
 	this->processResponseCallback = processResponseCallback;
 }
 
-void OpenTherm::begin(void(*handleInterruptCallback)(void))
-{
-	begin(handleInterruptCallback, NULL);
-}
+//void OpenTherm::begin(void(*handleInterruptCallback)(void))
+//{
+//	begin(handleInterruptCallback, NULL);
+//}
 
 bool IRAM_ATTR OpenTherm::isReady()
 {
